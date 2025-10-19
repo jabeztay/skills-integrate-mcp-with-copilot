@@ -14,3 +14,13 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
+## Local development: seeding MongoDB
+
+If you're running the app locally with MongoDB, you can seed example activities with:
+
+```bash
+MONGO_URL="mongodb://localhost:27017" DB_NAME=mergington python -m src.seed_db
+```
+
+Make sure `motor` is installed (it's already listed in `requirements.txt`).
+
